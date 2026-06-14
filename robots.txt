@@ -1,0 +1,17 @@
+# ============================================================
+#  robots.txt — Shubham Prajapati Portfolio
+#  https://shubham-spcse.github.io
+# ============================================================
+
+User-agent: *
+Allow: /
+
+# Block access to raw assets that don't need indexing
+Disallow: /assets/icons/
+Disallow: /sw.js
+
+# Sitemap location
+Sitemap: https://shubham-spcse.github.io/sitemap.xml
+
+# Crawl-delay hint (optional, respected by some bots)
+Crawl-delay: 10

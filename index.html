@@ -5,200 +5,194 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Shubham Prajapati | Software Engineer</title>
+    <meta name="description" content="Portfolio of Shubham Prajapati — Software Engineer, Java Developer, GATE 2026 Qualified. Specialising in Java, DSA, JDBC, Servlets, JSP and MySQL.">
+    <meta name="keywords"    content="Shubham Prajapati, Java Developer, Software Engineer, GATE 2026, DSA, Portfolio">
+    <meta name="author"      content="Shubham Prajapati">
 
-    <meta name="description"
-          content="Portfolio of Shubham Prajapati, Software Engineer, Java Developer, GATE 2026 Qualified.">
+    <!-- Open Graph -->
+    <meta property="og:type"        content="website">
+    <meta property="og:title"       content="Shubham Prajapati | Software Engineer">
+    <meta property="og:description" content="GATE 2026 Qualified Software Engineer specialising in Java, DSA and full-stack Java web development.">
+    <meta property="og:image"       content="assets/profile.png">
+    <meta property="og:url"         content="https://shubham-spcse.github.io">
 
-    <link rel="stylesheet" href="css/style.css">
+    <!-- Twitter Card -->
+    <meta name="twitter:card"        content="summary_large_image">
+    <meta name="twitter:title"       content="Shubham Prajapati | Software Engineer">
+    <meta name="twitter:description" content="GATE 2026 Qualified Software Engineer specialising in Java, DSA and full-stack Java web development.">
+    <meta name="twitter:image"       content="assets/profile.png">
 
+    <!-- Favicon -->
+    <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="assets/favicon.ico">
+
+    <!-- Preload critical image -->
+    <link rel="preload" as="image" href="assets/profile.png">
+
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
-          rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-<!-- Loader -->
-<div id="loader">
 
+<!-- ========== LOADER ========== -->
+<div id="loader" aria-hidden="true">
     <h1>SP</h1>
-
 </div>
 
-<!-- Background Glow -->
-<div class="blur blur1"></div>
-<div class="blur blur2"></div>
+<!-- ========== SCROLL PROGRESS BAR ========== -->
+<div id="scroll-progress" aria-hidden="true"></div>
 
-<!-- Navbar -->
-<nav class="navbar">
+<!-- ========== BG GLOW ========== -->
+<div class="blur blur1" aria-hidden="true"></div>
+<div class="blur blur2" aria-hidden="true"></div>
 
-    <div class="logo">
-        SP
-    </div>
+<!-- ========== NAVBAR ========== -->
+<nav class="navbar" role="navigation" aria-label="Main navigation">
 
-    <ul class="nav-links">
+    <div class="logo" aria-label="Shubham Prajapati">SP</div>
 
+    <ul class="nav-links" id="nav-links" role="list">
         <li><a href="#home">Home</a></li>
-
         <li><a href="#about">About</a></li>
-
         <li><a href="#skills">Skills</a></li>
-
         <li><a href="#projects">Projects</a></li>
-
+        <li><a href="#certifications">Certifications</a></li>
         <li><a href="#education">Education</a></li>
-
         <li><a href="#contact">Contact</a></li>
-
     </ul>
+
+    <div class="navbar-right">
+        <!-- Theme Toggle -->
+        <button class="theme-toggle" id="theme-toggle" aria-label="Toggle light/dark mode">
+            <i class="fas fa-moon" id="theme-icon"></i>
+        </button>
+        <!-- Hamburger -->
+        <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="nav-links">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </div>
 
 </nav>
 
-<!-- Hero Section -->
+<!-- ========== HERO ========== -->
 <section id="home" class="hero">
 
     <div class="hero-left">
 
-        <span class="badge">
-            🚀 Available for Opportunities
-        </span>
+        <span class="badge">🚀 Available for Opportunities</span>
 
-        <h1>
-            Hi, I'm
-            <span>Shubham Prajapati</span>
-        </h1>
+        <h1>Hi, I'm <span>Shubham Prajapati</span></h1>
 
-        <h2 id="typing-text">
-            Software Engineer
-        </h2>
+        <h2 id="typing-text">Software Engineer</h2>
 
         <p>
             Computer Science Engineering student, GATE 2026 qualified,
-            and aspiring Software Engineer specializing in Java,
-            Data Structures & Algorithms, JDBC, Servlets, JSP,
-            MySQL and modern web technologies.
+            and aspiring Software Engineer specialising in Java,
+            Data Structures &amp; Algorithms, JDBC, Servlets, JSP
+            and MySQL.
         </p>
 
         <div class="hero-buttons">
-
             <a href="#projects" class="btn primary-btn">
-                View Projects
+                <i class="fas fa-eye"></i> View Projects
             </a>
-
-            <a href="assets/resume.pdf"
-               class="btn secondary-btn"
-               download>
-                Download Resume
+            <a href="assets/resume.pdf" class="btn secondary-btn" download>
+                <i class="fas fa-download"></i> Download Resume
             </a>
-
         </div>
 
         <div class="social-icons">
-
-            <a href="https://github.com/Shubham-spcse"
-               target="_blank">
-                <i class="fab fa-github"></i>
+            <a href="https://github.com/Shubham-spcse" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile">
+                <i class="fab fa-github" aria-hidden="true"></i>
             </a>
-
-            <a href="https://www.linkedin.com/in/spcse900"
-               target="_blank">
-                <i class="fab fa-linkedin"></i>
+            <a href="https://www.linkedin.com/in/spcse900" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile">
+                <i class="fab fa-linkedin" aria-hidden="true"></i>
             </a>
-
-            <a href="mailto:spcse900@gmail.com">
-                <i class="fas fa-envelope"></i>
+            <a href="mailto:spcse900@gmail.com" aria-label="Send email">
+                <i class="fas fa-envelope" aria-hidden="true"></i>
             </a>
-
         </div>
+
         <div class="quick-stats">
-
             <span>🏆 AIR 7798</span>
-
             <span>💻 500+ DSA</span>
-
             <span>🎓 CGPA 8.12</span>
             <span>☕ Java Developer</span>
-
         </div>
 
     </div>
 
     <div class="hero-right">
-
         <div class="profile-card">
-
-            <img src="assets/profile.png"
-                 alt="Shubham Prajapati">
-
+            <img src="assets/profile.png" alt="Shubham Prajapati — Software Engineer" fetchpriority="high">
         </div>
-
     </div>
 
 </section>
-<section id="about" class="about">
+
+<!-- ========== ABOUT ========== -->
+<section id="about" class="section-wrap about reveal">
 
     <div class="section-header">
-
         <span>ABOUT ME</span>
-
-        <h2>
-            Turning Ideas Into Software Solutions
-        </h2>
-
+        <h2>Turning Ideas Into Software Solutions</h2>
     </div>
 
     <div class="about-content">
 
         <div class="about-text">
-
             <p>
                 Qualified GATE 2026 with AIR 7798 and a score of 496.
                 I continuously improve my problem-solving skills through
-                Data Structures & Algorithms and real-world software projects.
+                Data Structures &amp; Algorithms and real-world software projects.
             </p>
-
             <p>
-                I specialize in Java development, Data Structures &
-                Algorithms, JDBC, Servlets, JSP and MySQL.
+                I specialise in Java development, JDBC, Servlets, JSP and MySQL —
+                building full-stack solutions from database layer to UI.
             </p>
-
             <p>
-                Qualified GATE 2026 with AIR 7798 and actively
-                preparing for Software Engineering opportunities.
+                Certified by Infosys Springboard in Java and by Samsung Innovation
+                Campus in Artificial Intelligence. Actively seeking Software
+                Engineering and Java Developer opportunities.
             </p>
-
         </div>
 
         <div class="stats-container">
-
             <div class="stat-card">
                 <h3 class="counter" data-target="496">0</h3>
                 <p>GATE Score</p>
             </div>
-
             <div class="stat-card">
                 <h3 class="counter" data-target="7798">0</h3>
-                <p>AIR</p>
+                <p>All India Rank</p>
             </div>
-
             <div class="stat-card">
                 <h3>8.12</h3>
                 <p>CGPA</p>
             </div>
-
             <div class="stat-card">
                 <h3 class="counter" data-target="500">0</h3>
                 <p>DSA Problems</p>
             </div>
-
         </div>
 
     </div>
 
 </section>
-<section id="skills" class="skills">
+
+<!-- ========== SKILLS ========== -->
+<section id="skills" class="section-wrap skills reveal">
 
     <div class="section-header">
         <span>SKILLS</span>
@@ -206,61 +200,57 @@
     </div>
 
     <div class="skills-grid">
-
         <div class="skill-card">
-            <i class="fa-brands fa-java"></i>
+            <i class="fa-brands fa-java" aria-hidden="true"></i>
             <h3>Java</h3>
         </div>
-
         <div class="skill-card">
-            <i class="fas fa-code"></i>
+            <i class="fas fa-code" aria-hidden="true"></i>
             <h3>DSA</h3>
         </div>
-
         <div class="skill-card">
-            <i class="fas fa-database"></i>
+            <i class="fas fa-database" aria-hidden="true"></i>
             <h3>MySQL</h3>
         </div>
-
         <div class="skill-card">
-            <i class="fas fa-server"></i>
+            <i class="fas fa-server" aria-hidden="true"></i>
             <h3>JDBC</h3>
         </div>
-
         <div class="skill-card">
-            <i class="fas fa-globe"></i>
+            <i class="fas fa-globe" aria-hidden="true"></i>
             <h3>Servlets</h3>
         </div>
-
         <div class="skill-card">
-            <i class="fas fa-file-code"></i>
+            <i class="fas fa-file-code" aria-hidden="true"></i>
             <h3>JSP</h3>
         </div>
-
         <div class="skill-card">
-            <i class="fa-brands fa-html5"></i>
+            <i class="fa-brands fa-html5" aria-hidden="true"></i>
             <h3>HTML</h3>
         </div>
-
         <div class="skill-card">
-            <i class="fa-brands fa-css3-alt"></i>
+            <i class="fa-brands fa-css3-alt" aria-hidden="true"></i>
             <h3>CSS</h3>
         </div>
-
         <div class="skill-card">
-            <i class="fa-brands fa-js"></i>
+            <i class="fa-brands fa-js" aria-hidden="true"></i>
             <h3>JavaScript</h3>
         </div>
-
         <div class="skill-card">
-            <i class="fa-brands fa-github"></i>
+            <i class="fa-brands fa-github" aria-hidden="true"></i>
             <h3>GitHub</h3>
         </div>
-
+        <div class="skill-card skill-learning">
+            <i class="fas fa-robot" aria-hidden="true"></i>
+            <h3>AI / ML</h3>
+            <span class="learning-badge">Learning</span>
+        </div>
     </div>
 
 </section>
-<section id="projects" class="projects">
+
+<!-- ========== PROJECTS ========== -->
+<section id="projects" class="section-wrap projects reveal">
 
     <div class="section-header">
         <span>PROJECTS</span>
@@ -269,25 +259,18 @@
 
     <div class="projects-grid">
 
+        <!-- Project 1 -->
         <div class="project-card">
-
             <div class="project-image">
-
-                <img src="assets/qr-attendance.png"
-                     alt="QR Attendance System">
-
+                <img src="assets/qr-attendance.png" alt="QR Attendance System screenshot" loading="lazy">
             </div>
-
             <div class="project-content">
-
                 <h3>QR Attendance System</h3>
-
                 <p>
-                    Secure attendance management system built using
-                    Java, JSP, Servlets and MySQL. Features QR
-                    generation, scanning, authentication and dashboard.
+                    Secure attendance management system built with Java, JSP,
+                    Servlets and MySQL. Features QR code generation, scanning,
+                    role-based authentication and an admin dashboard.
                 </p>
-
                 <div class="tech-stack">
                     <span>Java</span>
                     <span>Servlets</span>
@@ -295,216 +278,226 @@
                     <span>MySQL</span>
                 </div>
                 <div class="project-links">
-
-                    <a href="https://github.com/Shubham-spcse"
-                       target="_blank">
-
-                        <i class="fab fa-github"></i>
-                        Code
-
+                    <a href="https://github.com/Shubham-spcse" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-github" aria-hidden="true"></i> Code
                     </a>
-
                     <a href="#contact">
-
-                        <i class="fas fa-arrow-up-right-from-square"></i>
-                        Demo
-
+                        <i class="fas fa-arrow-up-right-from-square" aria-hidden="true"></i> Demo
                     </a>
-
                 </div>
-
             </div>
-
         </div>
 
+        <!-- Project 2 -->
         <div class="project-card">
-
             <div class="project-image">
-
-                <img src="assets/hostel-management.avif"
-                     alt="Hostel Management System">
-
+                <img src="assets/hostel-management.avif" alt="Hostel Management System screenshot" loading="lazy">
             </div>
-
             <div class="project-content">
-
                 <h3>Hostel Management System</h3>
-
                 <p>
                     Full-stack hostel management solution for student
-                    registration, room allocation and fee management
-                    using Java and MySQL.
+                    registration, room allocation and fee tracking.
+                    Built with core Java OOP principles and MySQL.
                 </p>
-
                 <div class="tech-stack">
                     <span>Java</span>
                     <span>MySQL</span>
+                    <span>JDBC</span>
                     <span>OOP</span>
                 </div>
-                <a href="https://github.com/Shubham-spcse"
-                   target="_blank"
-                   class="project-btn">
-
-                    <i class="fab fa-github"></i>
-                    View Project
-
-                </a>
-
+                <div class="project-links">
+                    <a href="https://github.com/Shubham-spcse" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-github" aria-hidden="true"></i> Code
+                    </a>
+                </div>
             </div>
-
         </div>
 
     </div>
 
 </section>
-<section id="education" class="education reveal">
+
+<!-- ========== CERTIFICATIONS ========== -->
+<section id="certifications" class="section-wrap certifications reveal">
+
+    <div class="section-header">
+        <span>CERTIFICATIONS</span>
+        <h2>Licences &amp; Achievements</h2>
+    </div>
+
+    <div class="certs-grid">
+
+        <!-- Infosys -->
+        <div class="cert-card">
+            <div class="cert-logo infosys-logo">
+                <img src="assets/infosys-logo.png"
+                     alt="Infosys Springboard"
+                     loading="lazy"
+                     onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                <div class="cert-logo-fallback" style="display:none;">
+                    <i class="fas fa-certificate" aria-hidden="true"></i>
+                </div>
+            </div>
+            <div class="cert-body">
+                <div class="cert-issuer">Infosys Springboard</div>
+                <h3 class="cert-title">Java Foundation Certification</h3>
+                <div class="cert-meta">
+                    <span class="cert-date"><i class="fas fa-calendar-alt" aria-hidden="true"></i> July 9, 2025</span>
+                    <span class="cert-id"><i class="fas fa-fingerprint" aria-hidden="true"></i> Verified</span>
+                </div>
+                <p class="cert-desc">
+                    Awarded for successfully completing the Java Foundation programme
+                    on Infosys Springboard — covering core Java, OOP, collections
+                    and exception handling.
+                </p>
+                <div class="cert-actions">
+                    <a href="assets/infosys_certificate.pdf" target="_blank" rel="noopener noreferrer" class="cert-btn primary">
+                        <i class="fas fa-eye" aria-hidden="true"></i> View Certificate
+                    </a>
+                    <a href="https://verify.onwingspan.com" target="_blank" rel="noopener noreferrer" class="cert-btn secondary">
+                        <i class="fas fa-qrcode" aria-hidden="true"></i> Verify
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Samsung -->
+        <div class="cert-card">
+            <div class="cert-logo samsung-logo">
+                <img src="assets/samsung-logo.pdf"
+                     alt="Samsung Innovation Campus"
+                     loading="lazy"
+                     onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                <div class="cert-logo-fallback" style="display:none;">
+                    <i class="fas fa-certificate" aria-hidden="true"></i>
+                </div>
+            </div>
+            <div class="cert-body">
+                <div class="cert-issuer">Samsung Innovation Campus</div>
+                <h3 class="cert-title">Artificial Intelligence</h3>
+                <div class="cert-meta">
+                    <span class="cert-date"><i class="fas fa-calendar-alt" aria-hidden="true"></i> Jul 16 – Oct 2, 2025</span>
+                    <span class="cert-id"><i class="fas fa-fingerprint" aria-hidden="true"></i> SIC06074</span>
+                </div>
+                <p class="cert-desc">
+                    Completed the Samsung Innovation Campus AI curriculum covering
+                    machine learning fundamentals, neural networks and practical
+                    AI applications. Certified by ESSCI.
+                </p>
+                <div class="cert-actions">
+                    <a href="assets/SHUBHAM_PRAJAPATI_samsung.pdf" target="_blank" rel="noopener noreferrer" class="cert-btn primary">
+                        <i class="fas fa-eye" aria-hidden="true"></i> View Certificate
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ========== EDUCATION ========== -->
+<section id="education" class="section-wrap education reveal">
 
     <div class="section-header">
         <span>EDUCATION</span>
         <h2>Academic Journey</h2>
     </div>
 
-    <!-- B.Tech -->
+    <div class="education-timeline">
 
-    <div class="education-card">
-
-        <div class="education-left">
-
-            <h3>B.Tech Computer Science & Engineering</h3>
-
-            <p>
-                Deen Dayal Upadhyaya Gorakhpur University
-            </p>
-
-            <span>
-                2022 - 2026 | CGPA: 8.12
-            </span>
-
-            <ul class="education-points">
-                <li>✓ GATE 2026 Qualified</li>
-                <li>✓ AIR 7798 (Score 496)</li>
-                <li>✓ Strong focus on DSA & Software Engineering</li>
-            </ul>
-
+        <!-- B.Tech -->
+        <div class="edu-item">
+            <div class="edu-dot"></div>
+            <div class="education-card">
+                <div class="education-left">
+                    <div class="edu-year-badge">2022 – 2026</div>
+                    <h3>B.Tech — Computer Science &amp; Engineering</h3>
+                    <p><i class="fas fa-university" aria-hidden="true"></i> Deen Dayal Upadhyaya Gorakhpur University</p>
+                    <span><i class="fas fa-star" aria-hidden="true"></i> CGPA: 8.12</span>
+                    <ul class="education-points">
+                        <li>✓ GATE 2026 Qualified — AIR 7798 (Score 496)</li>
+                        <li>✓ Strong focus on DSA &amp; Software Engineering</li>
+                        <li>✓ Certified by Infosys &amp; Samsung in Java and AI</li>
+                    </ul>
+                </div>
+                <div class="education-right">
+                    <img src="assets/ddu-campus.avif" alt="DDU Gorakhpur University campus" loading="lazy">
+                </div>
+            </div>
         </div>
 
-        <div class="education-right">
-
-            <img src="assets/ddu-campus.avif"
-                 alt="DDU Gorakhpur University">
-
+        <!-- Intermediate -->
+        <div class="edu-item">
+            <div class="edu-dot"></div>
+            <div class="education-card">
+                <div class="education-left">
+                    <div class="edu-year-badge">2021</div>
+                    <h3>Intermediate — Class XII</h3>
+                    <p><i class="fas fa-school" aria-hidden="true"></i> Nav Jeevan Mission School, Deoria</p>
+                    <span><i class="fas fa-star" aria-hidden="true"></i> 74.2%</span>
+                    <ul class="education-points">
+                        <li>✓ Science Stream (PCM)</li>
+                        <li>✓ Strong Mathematics background</li>
+                        <li>✓ Built foundation for Engineering studies</li>
+                    </ul>
+                </div>
+                <div class="education-right">
+                    <img src="assets/navjeevan-school.jpg" alt="Nav Jeevan Mission School" loading="lazy">
+                </div>
+            </div>
         </div>
 
-    </div>
-
-
-    <!-- Intermediate -->
-
-    <div class="education-card">
-
-        <div class="education-left">
-
-            <h3>Intermediate (Class XII)</h3>
-
-            <p>
-                Nav Jeevan Mission School, Deoria
-            </p>
-
-            <span>
-                2021 | 74.2%
-            </span>
-
-            <ul class="education-points">
-                <li>✓ Science Stream</li>
-                <li>✓ Mathematics Background</li>
-                <li>✓ Built foundation for Engineering studies</li>
-            </ul>
-
-        </div>
-
-        <div class="education-right">
-
-            <img src="assets/navjeevan-school.jpg"
-                 alt="Nav Jeevan Mission School">
-
-        </div>
-
-    </div>
-
-
-    <!-- High School -->
-
-    <div class="education-card">
-
-        <div class="education-left">
-
-            <h3>High School (Class X)</h3>
-
-            <p>
-                St. Xavier's High School, Mau
-            </p>
-
-            <span>
-                2019 | 90.0%
-            </span>
-
-            <ul class="education-points">
-                <li>✓ Excellent Academic Performance</li>
-                <li>✓ Strong analytical foundation</li>
-                <li>✓ Developed interest in Technology</li>
-            </ul>
-
-        </div>
-
-        <div class="education-right">
-
-            <img src="assets/stxavier-school.webp"
-                 alt="St Xavier School">
-
+        <!-- High School -->
+        <div class="edu-item">
+            <div class="edu-dot"></div>
+            <div class="education-card">
+                <div class="education-left">
+                    <div class="edu-year-badge">2019</div>
+                    <h3>High School — Class X</h3>
+                    <p><i class="fas fa-school" aria-hidden="true"></i> St. Xavier's High School, Mau</p>
+                    <span><i class="fas fa-star" aria-hidden="true"></i> 90.0%</span>
+                    <ul class="education-points">
+                        <li>✓ Excellent academic performance</li>
+                        <li>✓ Strong analytical foundation</li>
+                        <li>✓ Developed early interest in Technology</li>
+                    </ul>
+                </div>
+                <div class="education-right">
+                    <img src="assets/stxavier-school.webp" alt="St. Xavier's High School" loading="lazy">
+                </div>
+            </div>
         </div>
 
     </div>
 
 </section>
-<section class="resume reveal">
+
+<!-- ========== RESUME ========== -->
+<section class="section-wrap resume reveal">
 
     <div class="section-header">
-
         <span>RESUME</span>
-
         <h2>Download My Resume</h2>
-
     </div>
 
     <div class="resume-card">
-
-        <div class="resume-icon">
-
-            <i class="fas fa-file-pdf"></i>
-
-        </div>
-
-        <h3>
-            Professional Resume
-        </h3>
-
+        <i class="fas fa-file-pdf" aria-hidden="true"></i>
+        <h3>Professional Resume</h3>
         <p>
-            Download my latest resume containing
-            projects, skills, education and achievements.
+            Download my latest resume with projects, skills,
+            education, certifications and achievements.
         </p>
-
-        <a href="assets/resume.pdf"
-           download
-           class="btn primary-btn">
-
-            Download Resume
-
+        <a href="assets/resume.pdf" download class="btn primary-btn">
+            <i class="fas fa-download" aria-hidden="true"></i> Download Resume
         </a>
-
     </div>
 
 </section>
-<section id="contact" class="contact">
+
+<!-- ========== CONTACT ========== -->
+<section id="contact" class="section-wrap contact reveal">
 
     <div class="section-header">
         <span>CONTACT</span>
@@ -514,88 +507,122 @@
     <div class="contact-container">
 
         <div class="contact-info">
-
             <h3>Get In Touch</h3>
-
             <p>
                 I'm currently looking for Software Engineering,
                 Java Developer and internship opportunities.
+                Feel free to reach out — I'd love to connect!
             </p>
 
-            <p>
-                📧 spcse900@gmail.com
-            </p>
-
-            <p>
-                📍 Uttar Pradesh, India
-            </p>
-
+            <div class="contact-details">
+                <a href="mailto:spcse900@gmail.com" class="contact-detail-item">
+                    <div class="contact-detail-icon">
+                        <i class="fas fa-envelope" aria-hidden="true"></i>
+                    </div>
+                    <div>
+                        <span class="contact-detail-label">Email</span>
+                        <span class="contact-detail-value">spcse900@gmail.com</span>
+                    </div>
+                </a>
+                <div class="contact-detail-item">
+                    <div class="contact-detail-icon">
+                        <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+                    </div>
+                    <div>
+                        <span class="contact-detail-label">Location</span>
+                        <span class="contact-detail-value">Uttar Pradesh, India</span>
+                    </div>
+                </div>
+                <a href="https://www.linkedin.com/in/spcse900" target="_blank" rel="noopener noreferrer" class="contact-detail-item">
+                    <div class="contact-detail-icon">
+                        <i class="fab fa-linkedin" aria-hidden="true"></i>
+                    </div>
+                    <div>
+                        <span class="contact-detail-label">LinkedIn</span>
+                        <span class="contact-detail-value">linkedin.com/in/spcse900</span>
+                    </div>
+                </a>
+                <a href="https://github.com/Shubham-spcse" target="_blank" rel="noopener noreferrer" class="contact-detail-item">
+                    <div class="contact-detail-icon">
+                        <i class="fab fa-github" aria-hidden="true"></i>
+                    </div>
+                    <div>
+                        <span class="contact-detail-label">GitHub</span>
+                        <span class="contact-detail-value">github.com/Shubham-spcse</span>
+                    </div>
+                </a>
+            </div>
         </div>
 
-        <form class="contact-form">
+        <!-- Formspree-ready form — replace YOUR_FORM_ID -->
+        <form class="contact-form" id="contact-form"
+              action="https://formspree.io/f/YOUR_FORM_ID"
+              method="POST" novalidate>
 
-            <input
-                    type="text"
-                    placeholder="Your Name"
-                    required>
+            <div class="form-group">
+                <input type="text" id="name" name="name"
+                       placeholder="Your Name" required autocomplete="name">
+                <span class="form-error" id="name-error"></span>
+            </div>
 
-            <input
-                    type="email"
-                    placeholder="Your Email"
-                    required>
+            <div class="form-group">
+                <input type="email" id="email" name="email"
+                       placeholder="Your Email" required autocomplete="email">
+                <span class="form-error" id="email-error"></span>
+            </div>
 
-            <textarea
-                    rows="5"
-                    placeholder="Your Message"
-                    required></textarea>
+            <div class="form-group">
+                <input type="text" id="subject" name="subject"
+                       placeholder="Subject">
+            </div>
 
-            <button
-                    type="submit"
-                    class="btn primary-btn">
-                Let's Connect
+            <div class="form-group">
+          <textarea id="message" name="message" rows="5"
+                    placeholder="Your Message" required></textarea>
+                <span class="form-error" id="message-error"></span>
+            </div>
+
+            <button type="submit" class="btn primary-btn" id="submit-btn">
+          <span id="btn-text">
+            <i class="fas fa-paper-plane" aria-hidden="true"></i> Send Message
+          </span>
+                <span id="btn-loading" style="display:none;">
+            <i class="fas fa-spinner fa-spin" aria-hidden="true"></i> Sending…
+          </span>
             </button>
+
+            <div id="form-success" class="form-success" style="display:none;">
+                <i class="fas fa-check-circle" aria-hidden="true"></i>
+                Message sent! I'll get back to you soon.
+            </div>
 
         </form>
 
     </div>
 
 </section>
+
+<!-- ========== FOOTER ========== -->
 <footer>
-
     <div class="footer-content">
-
         <h3>Shubham Prajapati</h3>
-
-        <p>
-            Software Engineer • Java Developer • Problem Solver
-        </p>
-
+        <p>Software Engineer &bull; Java Developer &bull; Problem Solver</p>
         <div class="footer-social">
-
-            <a href="https://github.com/Shubham-spcse">
-                <i class="fab fa-github"></i>
-            </a>
-
-            <a href="https://www.linkedin.com/in/spcse900">
-                <i class="fab fa-linkedin"></i>
-            </a>
-
-            <a href="mailto:spcse900@gmail.com">
-                <i class="fas fa-envelope"></i>
-            </a>
-
+            <a href="https://github.com/Shubham-spcse"    target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github" aria-hidden="true"></i></a>
+            <a href="https://www.linkedin.com/in/spcse900" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
+            <a href="mailto:spcse900@gmail.com" aria-label="Email"><i class="fas fa-envelope" aria-hidden="true"></i></a>
         </div>
-
-        <p>
-            © 2026 Shubham Prajapati. All Rights Reserved.
-        </p>
-
+        <p class="footer-copy">&copy; <span id="year"></span> Shubham Prajapati. All Rights Reserved.</p>
     </div>
-
 </footer>
 
+<!-- ========== BACK TO TOP ========== -->
+<button id="back-to-top" aria-label="Back to top" title="Back to top">
+    <i class="fas fa-chevron-up" aria-hidden="true"></i>
+</button>
+
+<!-- ========== SCRIPT ========== -->
 <script src="js/script.js"></script>
 
 </body>
-
 </html>
